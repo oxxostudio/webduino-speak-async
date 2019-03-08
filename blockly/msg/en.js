@@ -1,1 +1,1 @@
-MSG.catSpreadSheetPlus = "SpreadSheet";
+MSG.catSpreadSheetPlus = "Speak";
