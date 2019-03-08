@@ -1,0 +1,17 @@
+<category id="catSpeak" COLOUR="40">
+  <block type="speak_async">
+    <value name="text_">
+      <block type="text">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="setting_">
+      <block type="speak_async_setting">
+        <field name="pitch_">1</field>
+        <field name="rate_">1</field>
+      </block>
+    </value>
+  </block>
+  <block type="speech_recognition"></block>
+  <block type="speech_recognition_value"></block>
+</category>

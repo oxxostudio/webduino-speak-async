@@ -1,0 +1,1 @@
+MSG.catSpreadSheetPlus = "語音朗讀＆辨識";
