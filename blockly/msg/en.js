@@ -1,1 +1,1 @@
-MSG.catSpreadSheetPlus = "Speak";
+MSG.catSpeakAsync = "Speak";

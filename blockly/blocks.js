@@ -3,11 +3,11 @@ Blockly.Blocks['speak_async'] = {
     init: function () {
         this.appendValueInput("text_")
             .setCheck(null)
-            .appendField(Blockly.Msg.WEBDUINO_SPEAK_TEXT, "朗讀文字");
+            .appendField("朗讀文字");
         this.appendValueInput("setting_")
             .setAlign(Blockly.ALIGN_RIGHT)
             .setCheck(null)
-            .appendField(Blockly.Msg.WEBDUINO_SPEAK_SETTING, "參數設定");
+            .appendField("參數設定");
         this.setInputsInline(false);
         this.setPreviousStatement(true, null);
         this.setNextStatement(true, null);

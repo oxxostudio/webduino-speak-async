@@ -1,1 +1,1 @@
-MSG.catSpreadSheetPlus = "語音朗讀＆辨識";
+MSG.catSpeakAsync = "語音朗讀＆辨識";
