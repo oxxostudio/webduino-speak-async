@@ -20,13 +20,13 @@ Blockly.JavaScript['speak_async_setting'] = function (block) {
 };
 
 /* 語音辨識 */
-Blockly.JavaScript['speech_recognition'] = function (block) {
+Blockly.JavaScript['speech_async_recognition'] = function (block) {
   let dropdown_lang_ = block.getFieldValue('lang_');
-  let code = 'await speechRecognition(\'' + dropdown_lang_ + '\');\n';
+  let code = 'await speechRecognitionAsync(\'' + dropdown_lang_ + '\');\n';
   return code;
 };
 
-Blockly.JavaScript['speech_recognition_value'] = function (block) {
+Blockly.JavaScript['speech_async_recognition_value'] = function (block) {
   var code = 'speechValue_';
   return [code, Blockly.JavaScript.ORDER_NONE];
 };

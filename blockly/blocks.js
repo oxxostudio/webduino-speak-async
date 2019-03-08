@@ -1,4 +1,23 @@
 /* 語音朗讀 */
+Blockly.Blocks['speak_async'] = {
+    init: function () {
+        this.appendValueInput("text_")
+            .setCheck(null)
+            .appendField(Blockly.Msg.WEBDUINO_SPEAK_TEXT, "朗讀文字");
+        this.appendValueInput("setting_")
+            .setAlign(Blockly.ALIGN_RIGHT)
+            .setCheck(null)
+            .appendField(Blockly.Msg.WEBDUINO_SPEAK_SETTING, "參數設定");
+        this.setInputsInline(false);
+        this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
+        this.setTooltip('');
+        this.setColour(40);
+        this.setHelpUrl('');
+        this.setCommentText("朗讀結束後，才會繼續執行下方程式");
+    }
+};
+
 Blockly.Blocks['speak_async_setting'] = {
     init: function () {
         this.appendDummyInput()
@@ -33,7 +52,7 @@ Blockly.Blocks['speak_async_setting'] = {
 };
 
 /* 語音辨識 */
-Blockly.Blocks['speech_recognition'] = {
+Blockly.Blocks['speech_async_recognition'] = {
     init: function () {
         this.appendDummyInput()
             .appendField("語音辨識，語言")
@@ -48,7 +67,7 @@ Blockly.Blocks['speech_recognition'] = {
     }
 };
 
-Blockly.Blocks['speech_recognition_value'] = {
+Blockly.Blocks['speech_async_recognition_value'] = {
     init: function () {
         this.appendDummyInput()
             .appendField("語音辨識的文字");

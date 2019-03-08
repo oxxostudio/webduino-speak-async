@@ -1,8 +1,9 @@
 {
   "types": [
+    "speak_async",
     "speak_async_setting",
-    "speech_recognition",
-    "speech_recognition_value"
+    "speech_async_recognition",
+    "speech_async_recognition_value"
   ],
   "category": "catPlus",
   "scripts": [

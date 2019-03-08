@@ -18,7 +18,7 @@
   }
 
   window.speechValue_ = '';
-  window.speechRecognition = function (lang) {
+  window.speechRecognitionAsync = function (lang) {
 
     return new Promise(resolve => {
       let recognition = new webkitSpeechRecognition();
